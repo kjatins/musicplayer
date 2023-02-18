@@ -1,0 +1,30 @@
+.fav {
+    content: url("icons/favorite_FILL1_wght400_GRAD0_opsz48.png");
+    cursor: pointer;
+ 
+}
+
+.pre {
+    content: url("icons/pre.png");
+    cursor: pointer;
+ 
+}
+
+.playbtn {
+    content: url("icons/play.png");
+    cursor: pointer;
+}
+
+.pause {
+    content: url("icons/pause_FILL1_wght700_GRAD200_opsz48.png");
+    cursor: pointer;
+}
+
+.next {
+    content: url("icons/nex.png");
+    cursor: pointer;
+}
+.addlist {
+    content: url("icons/playlist_add_FILL1_wght400_GRAD0_opsz48.png");
+    cursor: pointer;
+}

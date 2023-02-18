@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: verela;
+    src: url("fonts/VarelaRound-Regular.ttf");
+}
+body{
+    background-color: black;
+    font-family: verela;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.mpcard {
+    display: flex;
+    width: fit-content;
+    background: black;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 6px 13px -5px rgb(255, 228, 228);
+}
+
+.back0 {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 600px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.back {
+    height: 200px;
+    width: inherit;
+    background-image: url("");
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+.back1 {
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+}
+
+.back2 {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+    top:39%;
+    border-radius: 50px;
+}
+
+.back3 {
+    height: 50px;
+    width: 337px;
+    background-color: white;
+    position: absolute;
+    top: 39%;
+    border-radius: 50px;
+    right: 0;
+
+}
+.container{
+    position: absolute;
+    height: 450px;
+width: 600px;
+display: flex;
+flex-direction: column;
+}
+.disk{
+    height: 212px;
+    width: 212px;
+    position: absolute;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    top: 21%;
+    left: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px -2px black;
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+.disk.play{
+    animation-play-state: running;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.full img{
+    filter: invert(100%);
+    rotate: 90deg;
+    height:40px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.setting img{
+    position: absolute;
+    filter: invert(100%);
+    right: 20px;
+    top: 20px;
+    height: 40px;
+}
+.player{
+    width: inherit;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+}
+.player i{
+    margin: 0px 25px 0px 25px;
+}
+
+.bottom{
+    width: 90%;
+    position: absolute;
+    margin: 5%;
+    display: inline;
+    bottom: 45px;
+}
+.seek-bar{
+    width: 100%;
+}
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    
+}
+/* chrome and safari targets */
+input[type="range"]::-webkit-slider-runnable-track{
+    background: rgb(95, 95, 95);;
+    height: 0.5rem;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px -2px rgb(112, 112, 112);
+}
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    margin-top: -12px;
+    background-color: red;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px -2px rgb(112, 112, 112);
+}
+/* firefox targets */
+input[type="range"]::-moz-range-track{
+    background: rgb(95, 95, 95);
+    height: 0.5rem;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px -2px rgb(112, 112, 112);
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -12px;
+    background-color: red;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px -2px rgb(112, 112, 112);
+}
+input[type="range"]::-moz-range-progress{
+    background: rgb(255, 0, 0);
+    height: 0.55rem;
+    border-radius: 50px;
+    
+}
+.text{
+    display: flex;
+    height: 312px;
+    width: 600px;
+    flex-direction: column;
+    bottom: 0;
+    position: absolute;
+    
+}
+.album{
+    display: flex;
+    justify-content: end;
+}
+.album a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    margin-right: 15px;
+    padding-bottom: 35px;
+}
+.album a h3{
+    margin-right: 10px;
+}
+.album a img{
+    rotate: 180deg;
+    height: 25px;
+    filter: invert(1);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    padding-left: 48%;
+}
